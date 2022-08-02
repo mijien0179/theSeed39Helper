@@ -6,6 +6,12 @@ namespace theSeed39Searcher
     {
         String UpdateDate = "2022.08.02.";
         Color AnswerColor = Color.Red;
+        Button cancelBtn = new Button()
+        {
+            Text = "Cancel",
+
+        };
+
         public Form1()
         {
             InitializeComponent();
@@ -14,6 +20,15 @@ namespace theSeed39Searcher
             맨위로ToolStripMenuItem_Click(맨위로ToolStripMenuItem, new EventArgs());
             투명도80ToolStripMenuItem_Click(투명도80ToolStripMenuItem, new EventArgs());
             textBox1_TextChanged(textBox1, new EventArgs());
+
+            cancelBtn.Click += new EventHandler(
+                (s, e) =>
+                {
+
+                    textBox1.Text = "";
+
+                }
+            );
 
             searchList = qString.Split("\n");
             ImeMode = ImeMode.Hangul;
@@ -24,6 +39,8 @@ namespace theSeed39Searcher
         private void Form1_Load(object sender, EventArgs e)
         {
             Text += $" {UpdateDate}";
+
+            CancelButton = cancelBtn;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -123,7 +140,8 @@ namespace theSeed39Searcher
         private void 정답색ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var cd = new ColorDialog();
-            if (cd.ShowDialog() == DialogResult.OK){
+            if (cd.ShowDialog() == DialogResult.OK)
+            {
                 AnswerColor = cd.Color;
             }
 
