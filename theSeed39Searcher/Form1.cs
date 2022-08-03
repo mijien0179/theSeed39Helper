@@ -62,10 +62,11 @@ namespace theSeed39Searcher
             string selected = "답이 없습니다.";
             foreach (var str in searchList)
             {
+                var tested = str.Replace(" ", "");
                 b = 0;
                 foreach (var item in data)
                 {
-                    if (!str.Contains(item))
+                    if (!tested.Contains(item))
                     {
                         break;
                     }
