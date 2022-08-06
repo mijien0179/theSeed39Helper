@@ -1,30 +1,23 @@
-# theSeed39Searcher
-메이플스토리 더시드 39층 문제 검색기입니다.
+# theSeed39FloorHelper
 
-* 창을 맨 위로 유지시킬 수 있습니다. + 투명도 설정 가능
-* 짧은 단어 및 비연속하는 문자 조합으로 검색할 수 있습니다
+설명서  
+- [정답 검색기](./theSeed39Searcher/readme.md)
+- [시뮬레이터](./theSeed39Simulator/readme.md)
 
-사용 방법
----
-처음 실행하면 아래처럼 실행됩니다.  
-<img src="https://user-images.githubusercontent.com/40613626/182358836-ee25368c-b047-422d-ab85-834381dd34ed.png" style="width:35em"/>
 
-![image](https://user-images.githubusercontent.com/40613626/182358851-d19dac36-ffb3-4bae-9eb9-ad06a72946a6.png)  
-더시드 문제 및 정답의 단어를 입력하면 해당하는 문제와 정답을 띄워줍니다.
+## 안내
 
-<div style="display:block">
-  <img src="https://user-images.githubusercontent.com/40613626/182359102-bcdef57a-ccba-4e8c-b54c-01249b3a015b.png" style="width:30em;display:inline-block"/>
-  <img src="https://user-images.githubusercontent.com/40613626/182359241-a2479789-5c02-4dcb-8433-b1e12e4e981d.png" style="width:30em;display:inline-block"/>
-</div>
-질문의 특정 단어 + 정답 일부의 조합으로도 검색할 수 있습니다.
+### Q. 아래처럼 PC 보호라면서 실행이 안돼요.
+<img src="./images/error-pcProtection.png" style="width:25em"/>  
 
-<img src="https://user-images.githubusercontent.com/40613626/182359928-9d2486b6-c654-4bec-b3ae-dfe6e95beb27.png" style="width:35em">  
+> A. 프로그램 서명을 받지 않아서 Windows Defender에 의해 차단된 경우입니다. 화면의 `추가 정보`를 클릭한 후 실행 버튼을 확인할 수 있습니다.
 
-검색에 필요한 정보가 부족할 경우 ***잘못된 질문***이 표시될 수 있습니다. 이경우 ***검색 문자열을 띄어쓰기로 추가***해주세요  
-<div>
-<img src="https://user-images.githubusercontent.com/40613626/182360142-512008eb-4547-4a47-8bff-ecc2f5b8300f.png" style="width:30em;display:inline-block;">
-<img src="https://user-images.githubusercontent.com/40613626/182360271-43981cb0-3cf3-47a5-97f9-67fef5167ef9.png" style="width:30em;display:inline-block;">
-</div>
 
-> 첫번째의 경우 오르비스와 **컨**닝시티를 기준으로 검색했습니다.  
-> 두번째는 **아**쿠아리움과 **컨**닝시티를 기준으로 검색했습니다.
+### Q. 아래 이미지처럼 경고 문구가 뜨고 아니오를 누르면 실행이 안되고, 예를 누르면 이상한 홈페이지로 이동해요.<br/>
+<img src="./images/error-requireDotnet.png" style="width:25em"/>
+
+> A. 본 프로그램은 .NET 6 기반으로 개발된 C# 프로그램입니다. 따라서 이와같이 나온 경우 사용자분의 `PC에 .NET 6가 설치되지 않았음`을 의미합니다.  
+> 1. 예를 눌러 이동할 수 있는 홈페이지에서 .NET 6를 찾아 설치하거나,
+> 2. 압축파일 중 `DirectExecute`라는 문구가 붙은 압축파일을 다운로드받아
+>
+> 실행할 수 있습니다.
