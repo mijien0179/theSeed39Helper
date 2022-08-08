@@ -43,6 +43,13 @@ namespace theSeed39Searcher
             CancelButton = cancelBtn;
         }
 
+        public string Query
+        {
+            get => textBox1.Text;
+            set => textBox1.Text = value;
+        }
+
+        public string selected;
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             var answer = new Label[] { label2, label3, label4, label5 };
@@ -59,7 +66,8 @@ namespace theSeed39Searcher
 
             int b = 0;
 
-            string selected = "답이 없습니다.";
+            selected = "답이 없습니다.";
+
             foreach (var str in searchList)
             {
                 var tested = str.Replace(" ", "");
@@ -151,6 +159,11 @@ namespace theSeed39Searcher
         private void 데이터출처ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("explorer", "http://39.theseed.ze.am/");
+        }
+
+        private void 오류제보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer", "https://github.com/mijien0179/theSeed39Helper/issues/new/choose");
         }
     }
 }

@@ -47,6 +47,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.개발자GithubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.데이터출처ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.오류제보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,7 +181,8 @@
             this.투명도80ToolStripMenuItem,
             this.toolStripSeparator1,
             this.개발자GithubToolStripMenuItem,
-            this.데이터출처ToolStripMenuItem});
+            this.데이터출처ToolStripMenuItem,
+            this.오류제보ToolStripMenuItem});
             this.창설정ToolStripMenuItem.Name = "창설정ToolStripMenuItem";
             this.창설정ToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.창설정ToolStripMenuItem.Text = "창 설정";
@@ -221,6 +223,13 @@
             this.데이터출처ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.데이터출처ToolStripMenuItem.Text = "데이터 출처";
             this.데이터출처ToolStripMenuItem.Click += new System.EventHandler(this.데이터출처ToolStripMenuItem_Click);
+            // 
+            // 오류제보ToolStripMenuItem
+            // 
+            this.오류제보ToolStripMenuItem.Name = "오류제보ToolStripMenuItem";
+            this.오류제보ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.오류제보ToolStripMenuItem.Text = "오류 제보";
+            this.오류제보ToolStripMenuItem.Click += new System.EventHandler(this.오류제보ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -267,5 +276,6 @@
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripMenuItem 창활성화시질문삭제ToolStripMenuItem;
         private ToolStripMenuItem 데이터출처ToolStripMenuItem;
+        private ToolStripMenuItem 오류제보ToolStripMenuItem;
     }
 }

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace theSeed39Simulator
@@ -66,6 +67,16 @@ namespace theSeed39Simulator
         private void 전체선택ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CheckSet(true);
+        }
+
+        private void 개발자GithubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer", "https://github.com/mijien0179/theSeed39Helper");
+        }
+
+        private void 오류제보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer", "https://github.com/mijien0179/theSeed39Helper/issues/new/choose");
         }
     }
 }
